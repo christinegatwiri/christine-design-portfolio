@@ -6,6 +6,10 @@
     cursor:pointer;
 }
 
+.nav_icons{
+    font-size:23px
+}
+
 .partners img{
     width:12%;
     height: 30px;
@@ -287,8 +291,8 @@
 
 .blog_heading{
     margin-top: 15px;
-    font-weight: 400;
-    font-size: 30px;
+    font-weight: 500;
+    font-size: 27px;
     margin-bottom: 0.7rem;
     line-height: 1.3;
 }
