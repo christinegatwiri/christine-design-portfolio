@@ -32,6 +32,7 @@
         <link href="css/styles.css" rel="stylesheet">
         <link href="css/custom.css" rel="stylesheet">
         <link href="css/case_study.css" rel="stylesheet">
+        <link href="css/se.css" rel="stylesheet">
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         
         <!-- Favicon  -->
@@ -84,23 +85,11 @@
         <!-- end of navigation -->
         
         <!-- Header -->
-        <header id="header" class="header" style="background-image: url('images/seamless/Blob.png');">
+        <header id="header" class="header se-header" style="background-image: url('images/seamless/Blob.png');">
             <div class="container">
                 <div class="row" >
-                    <div class="col-lg-6">
-                        <div class="text-container">
-                            <h1>
-                                <span class="h1-large hero_header">Christine Gatwiri</span>
-                            </h1>
-                                
-                            <p class="desc">I am a product designer with a development background. I am passionate about creating amazing experiences that are geared towards social impact and behavioural change.</p>
-                            <a class="btn-solid-lg" href="about-me.html">More About Me</a>
-                        </div> <!-- end of text-container -->
-                    </div> <!-- end of col -->
-                    <div class="col-lg-6">
-                        <div class="image-container header_image">
-                            <img class="img-fluid" src="images/seamless/hero_image.png"  alt="Christine Gatwiri's picture">
-                        </div> <!-- end of image-container -->
+                    <div class="col-lg-12">
+                        <img class="img-fluid" src="images/seamless/SE/hero.png" alt="Systematic Entreprenurship platform screenshots;dashboard and home page">
                     </div> <!-- end of col -->
                    
                 </div> <!-- end of row -->
@@ -108,7 +97,80 @@
         </header> <!-- end of header -->
         <!-- end of header -->
 
+        <!-- intro section -->
+        <div id="intro">
+            <div class="container">
+                <div class="row about-container">
+                    <div class="col-lg-12 about-desc">
+                        <h2>Supporting the next generation of African entrepreneurs</h2>
+                        <p class="about-txt">
+                            In this project, we created a platform that provided entrepreneurs with a 
+                            step by step process for developing their idea, along with community, mentors and 
+                            content to help them stay on track
+                        </p>
+                    </div>
+                    <div class="col-lg-12 about-desc challenge">
+                        <h2>The challenge before us</h2>
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <p class="about-txt">
+                                    According to statista.com, as of 2020, the average startup failure rate in Africa stood at 54 percent. This failure rate went higher during the covid pandemic. <br/><br/>
 
+                                    This was a very devastating fact considering that most graduates in Kenya and Africa as a whole defaulted to entrepreneurship due to the high unemployment rate(around around 13 percent according to stastista.com).<br/><br/>
+
+                                    We sort out to understand why startups failed at this high rate, and what could be possibly done about it
+                                </p>
+                            </div>
+                            <div class="col-lg-5">
+                                <img class="img-fluid" src="images/seamless/SE/stats.png">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div> 
+            </div>
+
+        </div>
+
+        <!-- team section -->
+        <div id="intro">
+            <div class="container">
+                <div class="row about-container">
+                    <div class="col-lg-12 about-desc challenge">
+                        <h2>Team Roles</h2>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <img class="img-fluid" src="images/seamless/SE/81450-team.gif">
+                            </div>
+                            <div class="col-lg-7">
+                                <p class="about-txt">
+                                    <b>My roles</b> in the team included:
+                                    <ul>
+                                        <li>Market research</li>
+                                        <li>Wireframing</li>
+                                        <li>Full stack development</li>
+                                        <li>Sprint Planning</li>
+                                        <li>User tests</li>
+                                    </ul>
+                                </p>
+                                <p class="about-txt">
+                                    <b>My team members and their roles</b>:
+                                    <ul>
+                                        <li>James Mungai - Team Lead/Founder</li>
+                                        <li>Michael Gitonga - Backend Developer</li>
+                                        <li>Mercy Mawia - Community Manager</li>
+                                        <li>Besa Kanika - Marketing Lead</li>
+                                        <li>Yuanita Rita - Visual Designer</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+        </div>
+        
         <!-- Case Study -->
         <div id="features" class="cards-1">
             <div class="container">
@@ -117,7 +179,7 @@
                         <h2 class="h2-heading case-title">Case Study</h2>
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->   
-                <div class="row pointer" onclick="openSE()" >
+                <div class="row" >
                     <div class="col-lg-5 card-container">
                         <div class="case_card">
                             <div class="logo-section">
@@ -260,7 +322,7 @@
             });
 
             function openSE(){
-                window.open("systematic-entrepreneurship.html")
+                window.open("")
             }
         </script>
         <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->

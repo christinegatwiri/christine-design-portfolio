@@ -2,6 +2,10 @@
     margin-top: 6rem;
 }
 
+.pointer{
+    cursor:pointer;
+}
+
 .partners img{
     width:12%;
     height: 30px;
