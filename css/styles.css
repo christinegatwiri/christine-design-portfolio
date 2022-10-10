@@ -364,8 +364,8 @@ a:hover {
 }
 
 .navbar .logo-image img {
-    width: 225px;
-	height:28px;
+    width: 200px;
+	height:60px;
 }
 
 .navbar .logo-text {
@@ -479,7 +479,7 @@ a:hover {
 /*     Header     */
 /******************/
 .header {
-	padding-top: 8rem;
+	padding-top: 10rem;
 	padding-bottom: 5.8rem;
 	background-color: #fff;
 	text-align: center;
