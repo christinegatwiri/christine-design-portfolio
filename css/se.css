@@ -3,6 +3,16 @@
     padding-bottom:4rem ;
 }
 
-.challenge{
+.challenge,.se_section{
     padding-top: 3rem;
+}
+
+.icon_container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.questions{
+    text-align: center;
 }
