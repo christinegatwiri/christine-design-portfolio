@@ -1,0 +1,42 @@
+.logo-section{
+    background: #6F3894;
+    padding:30px;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+}
+
+.case_card{
+    background: #FFFFFF;
+    border: 1px solid #D9DBE9;
+    box-shadow: 0px 15px 44px rgba(8, 15, 52, 0.06);
+    border-radius: 32px;
+}
+
+.card-container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.case_logo{
+    width:60%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card-desc{
+    padding: 20px;
+}
+
+.case-desc{
+    margin-bottom: 10px;
+    color: #A0A3BD;
+}
+
+.case-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 62px;
+}
+

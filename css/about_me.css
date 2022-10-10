@@ -1,0 +1,48 @@
+.header_pic{
+    width: 90%!important
+}
+
+@media (min-width: 1200px) {
+    .about-desc{
+        text-align: left;
+        max-width: 1200px;
+    }
+    .about-txt{
+        font-size: 1.2rem!important;
+
+    }
+    .about-container{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about_header_txt{
+        color:#170F49;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: 0;
+        display:block;
+        font-size: 49px;
+        line-height: 62px;
+    }
+}
+
+@media (min-width: 768px){
+.header .h1-large {
+    font-size: 2.75rem;
+    line-height: 3.625rem;
+}
+}
+
+.about_section{
+    margin-top: 0.5rem;
+}
+
+.about_header{
+    overflow: hidden;
+    padding-top: 15.7rem;
+    padding-bottom: 4rem;
+    background-color: #fff;
+}
