@@ -1,5 +1,14 @@
 .header_pic{
-    width: 90%!important
+    width: 80%!important
+}
+
+.about_headings{
+    font-size:30px;
+    text-align: left;
+}
+
+.hobby{
+    text-align: center;
 }
 
 @media (min-width: 1200px) {
@@ -11,7 +20,7 @@
         font-size: 1.2rem!important;
 
     }
-    .about-container{
+    .about-container, .row_col{
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -24,25 +33,50 @@
         width: 100%;
         margin-bottom: 0;
         display:block;
-        font-size: 49px;
+        font-size: 45px;
         line-height: 62px;
+        text-align: left;
+        margin-top: 50px;
+    }
+    .about_header{
+        overflow: hidden;
+        padding-top: 10.7rem;
+        padding-bottom: 2rem;
+        background-color: #fff;
+    }
+    .resume_btn{
+        margin-top:9rem
     }
 }
 
-@media (min-width: 768px){
+@media (max-width: 768px){
 .header .h1-large {
     font-size: 2.75rem;
     line-height: 3.625rem;
 }
+.about_header_txt{
+    color:#170F49;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 0;
+    display:block;
+    font-size: 45px;
+    line-height: 62px;
+    text-align: center;
+    margin-top: 50px;
 }
-
-.about_section{
-    margin-top: 0.5rem;
-}
-
 .about_header{
     overflow: hidden;
-    padding-top: 15.7rem;
+    padding-top: 4.7rem;
     padding-bottom: 4rem;
     background-color: #fff;
 }
+.about_section{
+    margin-top: -3rem;
+}
+}
+
+
+
