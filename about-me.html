@@ -220,35 +220,6 @@
         <!-- end of back to top button -->
             
         <!-- Scripts -->
-        <script>
-            var thisform = document.getElementById("subscription_form");
-
-            const headers_ = {
-                'Authorization': 'Bearer keyeRW28wn6OUUZ1M',
-                'Content-Type': 'application/json'
-            };
-
-            // When the form is submitted...
-            thisform.addEventListener("submit", function(event) {
-                document.getElementById('button_submit').style.display = 'none';
-                document.getElementById('first_loader').style.display = 'block';
-                event.preventDefault();
-
-                // POST the data
-                axios.post("https://api.airtable.com/v0/app2H52gozfxotnm9/Subscribers",
-                    {
-                        "fields": {
-                            "Name": document.getElementById("Name").value,
-                            "EmailAddress": document.getElementById("EmailAddress").value
-                        }
-                    }, {headers: headers_}
-                )
-                .then((resp) => {
-                    document.getElementById('subscription_form').style.display = 'none';
-                    document.getElementById('submitted').style.display = 'block';
-                });
-            });
-        </script>
         <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
         <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
         <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
