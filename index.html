@@ -74,9 +74,7 @@
                             </a>
                         </span>
                         </li> 
-                        <li class="nav-item">
-                            <a class="nav-link links" target="_blank" href="https://merch.seamlesshq.co">About Me</a>
-                        </li>
+                        
                     </ul>
                 </div> <!-- end of navbar-collapse -->
             </div> <!-- end of container -->
@@ -176,17 +174,16 @@
                     <div class="col-lg-12">
                         <h4 class="subscribe">Reach out to me</h4>
                         <p>Lets work together to create amazing products</p>
-                        <form id="subscription_form">
+                        <form id="contactForm">
                             <input placeholder="Name" id="Name" name="Name">
-                            <input placeholder="Email Address" id="EmailAddress" name="EmailAddress">
-                            <input placeholder="Your Message" id="EmailAddress" name="EmailAddress">
-                            <button class="btn-outline-lg page-scroll"  type="submit">
+                            <input placeholder="Email Address" id="EmailAddress" name="Email Address">
+                            <input placeholder="Your Message" id="Message" name="Message">
+                            <button class="btn-outline-lg page-scroll" id="submit" name="submit" type="submit">
                                 <span id="button_submit">Subscribe</span>
                                 <div id="first_loader" class="first-loader"></div>
                             </button>
-                            
                         </form>
-                        <h4 id="submitted">Your details were submitted successfully, you have been added to our list!!!</h4>
+                        <p id="submitted">Your details were submitted successfully, I will get back to you as soon as possible</p>
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
@@ -231,31 +228,35 @@
             
         <!-- Scripts -->
         <script>
-            var thisform = document.getElementById("subscription_form");
-
+            var thisForm = document.getElementById("contactForm");
             const headers_ = {
-                'Authorization': 'Bearer keyeRW28wn6OUUZ1M',
+                'Authorization': 'Bearer keybRXGbGUnYqAaZy',
                 'Content-Type': 'application/json'
             };
 
             // When the form is submitted...
-            thisform.addEventListener("submit", function(event) {
+            thisForm.addEventListener("submit", function(event) {
                 document.getElementById('button_submit').style.display = 'none';
                 document.getElementById('first_loader').style.display = 'block';
                 event.preventDefault();
 
                 // POST the data
-                axios.post("https://api.airtable.com/v0/app2H52gozfxotnm9/Subscribers",
-                    {
-                        "fields": {
-                            "Name": document.getElementById("Name").value,
-                            "EmailAddress": document.getElementById("EmailAddress").value
-                        }
-                    }, {headers: headers_}
+                axios.post("https://api.airtable.com/v0/appUZUYSPRVeZVyt6/Contact%20Info",
+                {
+                "fields": {
+                    "Name": document.getElementById("Name").value,
+                    "Email Address": document.getElementById("EmailAddress").value,
+                    "Message": document.getElementById("Message").value
+                }
+                }, {headers: headers_}
                 )
+
                 .then((resp) => {
-                    document.getElementById('subscription_form').style.display = 'none';
-                    document.getElementById('submitted').style.display = 'block';
+                    document.getElementById('contactForm').style.display =  'none';
+                    document.getElementById('submitted').style.display =  'block';
+                })
+                .catch(function (error) {
+                    console.log(error);
                 });
             });
 
