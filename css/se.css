@@ -3,7 +3,7 @@
     padding-bottom:4rem ;
 }
 
-.challenge,.se_section{
+.challenge,.se_section,.spacing{
     padding-top: 3rem;
 }
 
@@ -13,6 +13,20 @@
     margin-right: auto;
 }
 
+.icon_container{
+    width:100px;
+    height:100px;
+}
+
 .questions{
     text-align: center;
+}
+
+.description{
+    color: #565578;
+    font-size: 1.1rem;
+}
+
+.bottom-spacing{
+    padding-bottom: 3rem;
 }
