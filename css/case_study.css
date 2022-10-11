@@ -44,9 +44,12 @@
 
 .case-title{
     font-style: normal;
-    font-weight: 700;
-    font-size: 39px;
+    font-weight: 600;
+    font-size: 30px;
     line-height: 62px;
     text-align: center;
 }
 
+.blog_space{
+    margin-top: 3rem;
+}
