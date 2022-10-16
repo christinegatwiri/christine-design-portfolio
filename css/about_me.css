@@ -54,6 +54,11 @@
     font-size: 2.75rem;
     line-height: 3.625rem;
 }
+
+.about_headings{
+    font-size:30px;
+    text-align: center;
+}
 .about_header_txt{
     color:#170F49;
     font-weight: 700;
